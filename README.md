@@ -75,7 +75,27 @@ Error Message
 This helps users understand what type of data they are expected to enter.
 
 # Age Calculator
-```=DATEDIF($B$4, TODAY(),"Y") &"YEARS"&DATEDIF($B$8,TODAY(),"YM")&"MONTHS","&DATEDIF($B$8,TODAY(),"MD")$"DAYS"```
-Where $B$* is the fixed cell address of date value.
+We can use the DATEDIF function along with TODAY() to calculate a person's age in years, months, and days.
+
+```=DATEDIF($B$8,TODAY(),"Y")&"YEARS"&DATEDIF($B$8,TODAY(),"YM")&"MONTHS","&DATEDIF($B$8,TODAY(),"MD")$"DAYS"```
+
+Where $B$8* is the fixed cell address of date value.
+
+#### TODAY()
+Returns the current date automatically. Therefore, the calculated age updates whenever the worksheet is recalculated.
+
+#### DATEDIF(Start_Date, End_Date, Unit)
+Calculates the difference between two dates based on the specified unit.
 "Y" is the interval for Years, i.e. is the number of whole calendar years between the dates.
-"YM" is the interval for the Months in same year.
+
+DATEDIF Intervals
+
+"Y" – Years
+Returns the number of complete years between the start date and today's date.
+
+"YM" – Months
+Returns the number of complete months remaining after the completed years.
+
+"MD" – Days
+Returns the number of remaining days after the completed years and months.
+
