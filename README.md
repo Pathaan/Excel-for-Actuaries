@@ -74,3 +74,8 @@ Error Message
 
 This helps users understand what type of data they are expected to enter.
 
+# Age Calculator
+```=DATEDIF($B$4, TODAY(),"Y") &"YEARS"&DATEDIF($B$8,TODAY(),"YM")&"MONTHS","&DATEDIF($B$8,TODAY(),"MD")$"DAYS"```
+Where $B$* is the fixed cell address of date value.
+"Y" is the interval for Years, i.e. is the number of whole calendar years between the dates.
+"YM" is the interval for the Months in same year.
