@@ -5,7 +5,7 @@ Excel’s Consolidate feature allows us to combine data from multiple worksheets
 ## Summary
 Open all the workbooks containing the data to be consolidated.
 
-Create a blank workbook using ```Alt + N```.
+Create a blank workbook using ```Ctrl + N```.
 
 Arrange the open workbooks together using ```Alt + W + A```.
 
@@ -19,4 +19,58 @@ Use the grouping/outline options to view the consolidated data at different leve
 
 The final worksheet will display the summarized data, while the grouped sections can be expanded to view the detailed data.
 
-# Data Validation
+# Data Validation (```ALT + A + V + V```)
+We use data validation to control the type of data or the values that users enter into a cell. For example, we may want to restrict data entry to a certain range of dates. Limit choices by using a list, make sure that only positive whole numbers are entered.
+
+## Types of Data That Can Be Validated:
+Whole Number
+Decimal
+Date
+Time
+Text Length
+List (Drop-down)
+Data Validation Settings
+
+In the Settings tab, we first select the type of data we want to allow, such as Whole Number, Decimal, Date, or Text Length.
+
+Then, we can specify a condition such as:
+
+Between
+Not between
+Equal to
+Not equal to
+Greater than
+Greater than or equal to
+Less than
+Less than or equal to
+
+Depending on the selected condition, we can enter the required minimum and/or maximum values.
+
+### Input Message
+
+The Input Message tab allows us to display instructions when a user selects the cell.
+
+We can enter:
+
+Title
+Input Message
+
+For example, we can display: "Please enter a value between 1 and 100."
+
+### Error Alert
+
+The Error Alert tab allows us to control what happens when a user enters invalid data.
+
+### Excel provides three error alert styles:
+
+Stop – Prevents the user from entering invalid data.
+Warning – Warns the user but may allow the entry.
+Information – Provides information about the invalid entry.
+
+We can enter:
+
+Title
+Error Message
+
+This helps users understand what type of data they are expected to enter.
+
