@@ -98,3 +98,50 @@ Returns the number of complete months remaining after the completed years.
 "MD" – Days
 Returns the number of remaining days after the completed years and months.
 
+# Goal Seek (```Alt + A + W + G```)
+
+Goal Seek is a useful Excel tool for finding an unknown input value when you already know the desired output. It is particularly helpful when working with complex formulas or large datasets where calculating the required input manually would be difficult.
+
+Goal Seek allows us to change one input value used in a formula to achieve a specific result. Instead of calculating the output from a given input, we work backward to determine which input is required to reach the desired output.
+
+## What-If Analysis
+
+**What-If Analysis** is the process of working backward to determine the input value required to achieve a specific output.
+
+Normally, we provide inputs and use formulas to calculate the output. With What-If Analysis, we specify the desired output and determine what input is needed to produce that result.
+
+Excel provides 3 main What-If Analysis tools:
+
+1. **Scenario Manager**
+2. **Goal Seek**
+3. **Data Table**
+
+### Steps to Use Goal Seek
+
+**Step 1:** Make **C8** the active cell.
+
+**Step 2:** Go to **Goal Seek** using:
+
+`Alt + A + W + G`
+
+**Step 3:** Enter the following values in the Goal Seek dialog box:
+
+* **Set Cell:** `C8`
+* **To Value:** `80000`
+* **By Changing Cell:** `$C$5`
+
+Excel will change the value in **C5** until the formula in **C8** produces the desired result of **80,000**.
+
+### Important Limitation of Goal Seek
+
+Goal Seek works with **only one variable input at a time**.
+
+For example, suppose we want to achieve a specific profit by:
+
+* Decreasing **Expenses**, and
+* Increasing **Revenue**
+
+Since this involves changing more than one input value simultaneously, Goal Seek is not suitable.
+
+In such situations, we can use **Solver** or **Scenario Manager**, depending on the requirement.
+
