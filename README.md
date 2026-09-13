@@ -49,12 +49,19 @@ SUMPRODUCT: Multiplies corresponding values in one or more arrays and returns th
 Easy way to remember:
 
 COUNT → Count numbers
+
 COUNTIF → Count + 1 condition
+
 COUNTIFS → Count + multiple conditions
+
 COUNTA → Count non blanks
+
 SUM → Add
+
 SUMIF → Add + 1 condition
+
 SUMIFS → Add + multiple conditions
+
 SUMPRODUCT → Multiply corresponding values + add results
 
 # Excel Lookup Functions
@@ -245,8 +252,11 @@ returns:
 **Easy way to remember:**
 
 **VLOOKUP → Vertical**
+
 **HLOOKUP → Horizontal**
+
 **XLOOKUP → Flexible and modern**
+
 **INDEX + MATCH → MATCH finds position + INDEX returns value**
 
 
