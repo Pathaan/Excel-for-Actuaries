@@ -31,12 +31,19 @@ The key idea is that the error bars are used to extend the box plot from the qua
 
 ### ```Rank =RANK.EQ(A2,$A$2:$A$10,0)```
 COUNT: Counts the number of cells that contain numbers. ```COUNT	=COUNT(A2:A100)```
+
 COUNTIF: Counts cells that meet one criterion. ```COUNTIF	=COUNTIF(B2:B100,"Health")```
+
 COUNTIFS: Counts cells that meet multiple criteria. ```COUNTIFS	=COUNTIFS(B2:B100,"Health",C2:C100,"East")```
+
 COUNTA: Counts the number of non-blank cells in a range. ```COUNTA	=COUNTA(A2:A100)```
+
 SUM: Adds the values in a specified range. ```SUM	=SUM(D2:D100)```
+
 SUMIF: Adds values based on one criterion. ```SUMIF	=SUMIF(B2:B100,"Health",D2:D100)```
+
 SUMIFS: Adds values based on multiple criteria. ```SUMIFS	=SUMIFS(D2:D100,B2:B100,"Health",C2:C100,"East")```
+
 SUMPRODUCT: Multiplies corresponding values in one or more arrays and returns the sum of those products. ```SUMPRODUCT	=SUMPRODUCT(C2:C100,D2:D100)```
 
 Easy way to remember:
