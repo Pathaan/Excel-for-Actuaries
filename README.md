@@ -145,3 +145,69 @@ Since this involves changing more than one input value simultaneously, Goal Seek
 
 In such situations, we can use **Solver** or **Scenario Manager**, depending on the requirement.
 
+
+# Scenario Manager ```Alt + A + W + S```
+
+Scenario Manager is an Excel What-If Analysis tool that allows us to create and compare different sets of input values and their corresponding calculated results.
+
+We can create different scenarios such as:
+
+* **Best Case**
+* **Worst Case**
+* **Most Likely Case**
+
+The key to creating scenarios is to identify the cells containing input values that may change under different situations.
+
+## Creating a Scenario
+
+Open the **Scenario Manager** dialog box.
+
+### Step 1: Define the Scenario
+
+* **Scenario Name:** `Most Likely Case`
+* **Changing Cells:** `$G$5, $G$6, $G$8`
+* Click **OK**.
+
+These cells represent the input values that will change under the scenario.
+
+### Step 2: Enter Scenario Values
+
+For the **Most Likely Case**, enter the following values:
+
+| Input    | Scenario Value |
+| -------- | -------------: |
+| Sales    |   `=$G$5*1.05` |
+| COGS     |   `=$G$6*1.20` |
+| Expenses |   `=$G$8*1.25` |
+
+Click **OK**, and then click **Show** to display the scenario.
+
+You can create additional scenarios, such as **Best Case** and **Worst Case**, by using different values for the changing cells.
+
+## Scenario Manager Summary
+
+A Scenario Summary allows us to compare the results of different scenarios in a separate summary table.
+
+### Steps to Create a Scenario Summary
+
+**Step 1:** Open **Scenario Manager** and click **Summary**.
+
+**Step 2:** Under **Report Type**, select:
+
+`Scenario Summary`
+
+**Step 3:** In the **Result Cells** box, enter:
+
+`$G$9`
+
+Cell **G9** is selected because it contains the **Net Profit**, which changes based on the values of Sales, COGS, and Expenses.
+
+**Step 4:** Click **OK**.
+
+Excel will generate a **Scenario Summary Report** showing the different scenarios and their resulting Net Profit values.
+
+### Key Point
+
+**Scenario Manager → Multiple input values → Multiple scenarios → Compare results**
+
+Unlike **Goal Seek**, which changes **one input variable** to achieve a specific result, Scenario Manager allows us to compare different combinations of **multiple input values**.
