@@ -615,5 +615,9 @@ A loan of INR 90 lakhs is given at 18.50% for three years. Calculate the equal i
 		
 <img width="2061" height="1538" alt="image" src="https://github.com/user-attachments/assets/bcbf9b8f-860f-4682-b379-07616ce1cd27" />
 
+		
+										
+<img width="2077" height="726" alt="image" src="https://github.com/user-attachments/assets/4cd439d6-5eea-4100-8c69-a64c0df80971" />
+
 							
 <img width="2137" height="1801" alt="image" src="https://github.com/user-attachments/assets/9a3b4bd7-eb3f-44d9-a4cc-fbfcf1e2366f" />
