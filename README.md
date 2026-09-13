@@ -612,56 +612,8 @@ A loan of INR 90 lakhs is given at 18.50% for three years. Calculate the equal i
 **c)** Annually
 
 
-Principal 	50000000.00	Interest Rate first 4 years	0.10	PV at first 4 years 	3.169865446	Changing Year	14
-Interest Rate 	0.08	"Interest Rate
- after 4 years"	12%	PV after 4 years	2.808146522	=(1-B8^(B$3-(H$1-B$3)))/D2*(B7^(H$1-B$3))	
-Term	10	Term	10				
-"Interset Only
- Period"	3			Loan=X(1-v^n)/i		Refinancing	
-v	0.925925926			x= loan*i/(1-v^n)			Loan = X a(4) @12% + a(6) @10% v1(4)
-Refinancing							X = Loan/ (a(4) @12% + a(6) @10% v1(4))
-v1	0.909090909						
-v2	0.892857143						
-		Year	"Principal at the start
- of the Year"	"Equal Installments
-"	Interest 	Principal 	"Principal at the end of 
-the year"
-		1	50000000.00	4000000.00	4000000.00	0.00	50000000.00
-		2	50000000.00	4000000.00	4000000.00	0.00	50000000.00
-		3	50000000.00	4000000.00	4000000.00	0.00	50000000.00
-		4	50000000.00	7451474.43	4000000.00	3451474.43	46548525.57
-		5	46548525.57	7451474.43	3723882.05	3727592.39	42820933.18
-		6	42820933.18	7451474.43	3425674.65	4025799.78	38795133.39
-		7	38795133.39	7451474.43	3103610.67	4347863.76	34447269.63
-		8	34447269.63	7451474.43	2755781.57	4695692.86	29751576.77
-		9	29751576.77	7451474.43	2380126.14	5071348.29	24680228.47
-		10	24680228.47	7451474.43	1974418.28	5477056.16	19203172.32
-			Total	64160321.04	33363493.36	30796827.68	
-		Year 	"Principal at the start
- of the Year"	"Equal Installments
-"	Interest 	Principal 	"Principal at the end of 
-the year"
-	Refinance	1	19203172.32	3212300.75	1920317.23	1291983.52	17911188.80
-		2	17911188.80	3212300.75	1791118.88	1421181.87	16490006.93
-		3	16490006.93	3212300.75	1649000.69	1563300.05	14926706.88
-		4	14926706.88	3212300.75	1492670.69	1719630.06	13207076.82
-		5	13207076.82	3212300.75	1584849.22	1627451.53	11579625.29
-		6	11579625.29	3212300.75	1389555.03	1822745.71	9756879.58
-		7	9756879.58	3212300.75	1170825.55	2041475.20	7715404.38
-		8	7715404.38	3212300.75	925848.53	2286452.22	5428952.16
-		9	5428952.16	3212300.75	651474.26	2560826.49	2868125.67
-		10	2868125.67	3212300.75	344175.08	2868125.67	0.00
-			Total	32123007.48	12919835.16	19203172.32	
-							
-							
-							
-							
-			(e) Adequate Check				
-			Principal check	TRUE			
-			Interest Check	TRUE			
-			"Principal Value check
-"	Correct			
-			"Principal Value check
-"	Correct			
+		
+<img width="2061" height="1538" alt="image" src="https://github.com/user-attachments/assets/bcbf9b8f-860f-4682-b379-07616ce1cd27" />
+
 							
 <img width="2137" height="1801" alt="image" src="https://github.com/user-attachments/assets/9a3b4bd7-eb3f-44d9-a4cc-fbfcf1e2366f" />
