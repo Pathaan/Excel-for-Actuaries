@@ -57,6 +57,197 @@ SUMIF → Add + 1 condition
 SUMIFS → Add + multiple conditions
 SUMPRODUCT → Multiply corresponding values + add results
 
+# Excel Lookup Functions
+
+## 1. VLOOKUP
+
+**VLOOKUP (Vertical Lookup):** Used to search for a value in the **first column** of a table and return the corresponding value from another column.
+
+### Syntax
+
+```excel
+=VLOOKUP(lookup_value, table_array, col_index_num, FALSE)
+```
+
+### Example
+
+Suppose we have:
+
+| Policy ID | Premium | Region |
+| --------- | ------: | ------ |
+| P001      |    5000 | East   |
+| P002      |    6500 | West   |
+| P003      |    7200 | North  |
+
+To find the premium for **P002**:
+
+```excel
+=VLOOKUP("P002",A2:C4,2,FALSE)
+```
+
+**Result:** `6500`
+
+Here:
+
+* `"P002"` → Lookup value
+* `A2:C4` → Table range
+* `2` → Return value from the 2nd column
+* `FALSE` → Exact match
+
+**Important:** In VLOOKUP, the lookup value must be in the **first column** of the selected table.
+
+---
+
+# 2. XLOOKUP
+
+**XLOOKUP:** Used to search for a value in one range and return the corresponding value from another range.
+
+### Syntax
+
+```excel
+=XLOOKUP(lookup_value, lookup_array, return_array)
+```
+
+### Example
+
+Using the same data:
+
+```excel
+=XLOOKUP("P002",A2:A4,B2:B4)
+```
+
+**Result:** `6500`
+
+Here:
+
+* `"P002"` → Lookup value
+* `A2:A4` → Lookup range
+* `B2:B4` → Return range
+
+### Example with "Not Found"
+
+```excel
+=XLOOKUP("P005",A2:A4,B2:B4,"Not Found")
+```
+
+**Result:** `Not Found`
+
+**Advantage:** XLOOKUP can return values from a column **to the left or right** of the lookup column.
+
+---
+
+# 3. HLOOKUP
+
+**HLOOKUP (Horizontal Lookup):** Used to search for a value in the **first row** of a table and return the corresponding value from another row.
+
+### Syntax
+
+```excel
+=HLOOKUP(lookup_value, table_array, row_index_num, FALSE)
+```
+
+### Example
+
+Suppose we have:
+
+|         | P001 | P002 | P003  |
+| ------- | ---- | ---- | ----- |
+| Premium | 5000 | 6500 | 7200  |
+| Region  | East | West | North |
+
+To find the premium for **P002**:
+
+```excel
+=HLOOKUP("P002",B1:D3,2,FALSE)
+```
+
+**Result:** `6500`
+
+Here:
+
+* `"P002"` → Lookup value
+* `B1:D3` → Table range
+* `2` → Return value from the 2nd row
+* `FALSE` → Exact match
+
+**Important:** HLOOKUP searches **horizontally**, so the lookup value must be in the **first row**.
+
+---
+
+# 4. INDEX + MATCH
+
+**INDEX + MATCH:** A combination of two functions used to find a value in one range and return the corresponding value from another range.
+
+* **MATCH** finds the position of the lookup value.
+* **INDEX** returns the value at that position.
+
+### Syntax
+
+```excel
+=INDEX(return_range,MATCH(lookup_value,lookup_range,0))
+```
+
+### Example
+
+Using:
+
+| Policy ID | Premium |
+| --------- | ------: |
+| P001      |    5000 |
+| P002      |    6500 |
+| P003      |    7200 |
+
+To find the premium for **P002**:
+
+```excel
+=INDEX(B2:B4,MATCH("P002",A2:A4,0))
+```
+
+**Result:** `6500`
+
+### How it works
+
+First:
+
+```excel
+=MATCH("P002",A2:A4,0)
+```
+
+returns:
+
+```text
+2
+```
+
+because P002 is the **2nd item** in the range.
+
+Then:
+
+```excel
+=INDEX(B2:B4,2)
+```
+
+returns:
+
+```text
+6500
+```
+
+### Comparison
+
+| Function          | Meaning           | Searches      |
+| ----------------- | ----------------- | ------------- |
+| **VLOOKUP**       | Vertical Lookup   | Down a column |
+| **HLOOKUP**       | Horizontal Lookup | Across a row  |
+| **XLOOKUP**       | Flexible Lookup   | Lookup range  |
+| **INDEX + MATCH** | Position + Return | Flexible      |
+
+**Easy way to remember:**
+
+**VLOOKUP → Vertical**
+**HLOOKUP → Horizontal**
+**XLOOKUP → Flexible and modern**
+**INDEX + MATCH → MATCH finds position + INDEX returns value**
 
 
 
