@@ -279,7 +279,6 @@ For a standard fully amortising loan, the future value is normally **0**, becaus
 
 This produces the same payment amount.
 
-## Sign Convention in Excel
 
 Excel follows a cash-flow convention:
 
