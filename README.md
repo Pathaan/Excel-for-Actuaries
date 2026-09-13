@@ -578,3 +578,35 @@ If you want the payment displayed as a positive number, you can use:
 ```Principal=PPMT(Annual_Interst_Rate/Payment_per_Year,A7,Years*Payment_per_Year,Amount)```
 ```Interest=IPMT(Annual_Interst_Rate/Payment_per_Year,A7,Years*Payment_per_Year,Amount)```
 ```Balance= Previous balance + Principal```
+
+
+# LOAN SCHEDULES
+
+# Question 1
+
+A loan of INR 5 crores is being given at 8% per annum for 10 years. Annual repayment of the loan is made by the borrower. There are two options to repay:
+
+**Method 1:** Pay an equated annual installment for 10 years at 8% per annum.
+**Method 2:** Pay interest-only for the first 2 years and then both principal and interest for the next 8 years. The calculation for the installments from the third year will be done keeping in mind the full term of the loan only. This will result in an outstanding principal amount at the end of ten years after all the installments are paid.
+
+**a)** Calculate the equal installments that the borrower will have to pay if he chooses Method 1. Prepare the amortisation table and show the total amount paid, interest paid and principal paid by the borrower.
+
+**b)** Plot the interest and principal paid over the period of ten years.
+
+**c)** If he chooses Method 2 then what is the amount of interest he pays for ten years and what is the outstanding principal at the end of 10 years that the borrower needs to repay.
+
+**d)** The lender offers another scheme to the borrower. The loan amount, term and interest rate remain the same but the interest-only period increases from 2 to 3 years. The outstanding principal at the end of the ten years will then be refinanced by the lender for another ten years at 10% per annum interest rate for the first 4 years and 12% thereafter. Prepare the amortisation table for the initial loan period first and then for the refinancing part. Calculate the total interest paid, principal paid and amount paid over the period of 20 years.
+
+**e)** Provide adequate checks in the model.
+
+**f)** Plot the interest and principal paid for the first ten years together and in another graph plot the interest and principal paid for the next ten years.
+
+---
+
+# Question 2
+
+A loan of INR 90 lakhs is given at 18.50% for three years. Calculate the equal installments and the breakup of interest and principal for each payment made that the borrower will have to pay in the following modes:
+
+**a)** Monthly
+**b)** Quarterly
+**c)** Annually
