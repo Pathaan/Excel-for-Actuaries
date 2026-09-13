@@ -1,4 +1,37 @@
 CM1
+### ```Count =COUNT(AXX:AXX)```
+### ```Mean =AVERAGE(AXX:AXX)```
+### ```Median =MEDIAN(AXX:AXX)```
+### ```Standard Deviation =STDEV(AXX:AXX)```
+### ```Minimum =MIN(AXX:AXX)```
+### ```Quartile1 =QUARTILE(AXX:AXX,1)```
+### ``` 2Q BOX =MEDIAN-QUARTILE1```
+### ``` 3Q BOX =QUARTILE3-MEDIAN```
+### ```Whisker Minus(-) =QUARTILE1 -MINIMUM```
+### ```Whisker Plus(+) =MAXIMUM -QUARTILE3```
+### Adding Whiskers to a Box Plot
+
+To add whiskers to a box plot manually:
+
+1. First, calculate **Quartile 1 (Q1)**, **Median (Q2)**, and **Quartile 3 (Q3)**.
+2. Create the three box sections:
+
+   * **Q1**
+   * **Q2 Box**
+   * **Q3 Box**
+3. Select all the relevant data series in the chart.
+4. Go to **Chart Design → Add Chart Element → Error Bars**.
+5. Choose **More Error Bars Options**.
+6. Select **Custom** for the Error Amount.
+7. Choose **Specify Value**.
+8. Enter the calculated values for the **Positive Error Value** and **Negative Error Value** according to your whisker calculations.
+9. Repeat the process for the appropriate series to create the **upper and lower whiskers**.
+
+The key idea is that the error bars are used to extend the box plot from the quartiles to the calculated whisker values.
+
+### ```Rank =RANK.EQ(A2,$A$2:$A$10,0)```
+
+
 # Data Consolidation  ``` ALT + A + N```
 Excel’s Consolidate feature allows us to combine data from multiple worksheets into a single worksheet. For example, suppose we have three separate tables containing sales data for three different regions. We can use the Consolidate feature to bring all the data together in one place and calculate the required totals, subtotals, or other summary values.
 ## Summary
