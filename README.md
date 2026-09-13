@@ -211,3 +211,108 @@ Excel will generate a **Scenario Summary Report** showing the different scenario
 **Scenario Manager → Multiple input values → Multiple scenarios → Compare results**
 
 Unlike **Goal Seek**, which changes **one input variable** to achieve a specific result, Scenario Manager allows us to compare different combinations of **multiple input values**.
+
+
+# Amortisation of Loan
+
+A **loan amortisation schedule** shows how each loan payment is divided between **interest** and **principal** over the life of the loan.
+
+It provides a detailed schedule of all payments, allowing us to see:
+
+* How much of each payment goes toward **interest**
+* How much goes toward **reducing the principal**
+* The **remaining loan balance** after each payment
+
+One of the most important Excel functions used for calculating loan payments is the **PMT function**.
+
+## PMT Function
+
+The Excel **PMT function** is used to calculate the periodic payment required to fully repay a loan or other financial obligation over a specified period.
+
+The basic parameters are:
+
+* **Rate:** Interest rate per period
+* **NPER:** Total number of payment periods
+* **PV:** Present value, or amount borrowed
+* **FV:** Future value, or remaining balance at the end of the loan
+* **Type:** Optional; specifies whether payments are made at the beginning or end of each period
+
+### Scenario
+
+Suppose we have a loan with:
+
+* **Loan amount (PV):** $150,000
+* **Annual interest rate:** 6%
+* **Loan duration:** 20 years
+* **Payment frequency:** Monthly
+* **Future value (FV):** $0
+
+Since payments are made monthly:
+
+**Monthly interest rate:**
+
+`6% / 12 = 0.5%`
+
+**Total number of monthly payments:**
+
+`20 × 12 = 240`
+
+Therefore, the PMT formula is:
+
+```excel
+=PMT(6%/12,240,150000,0)
+```
+
+The result is approximately **-$1,074.18 per month**.
+
+The negative sign indicates that the payment is a **cash outflow** from the borrower's perspective.
+
+### Important Point About FV
+
+The **FV argument is optional**.
+
+For a standard fully amortising loan, the future value is normally **0**, because the loan is expected to be completely paid off at the end of the term. Therefore, FV can be omitted:
+
+```excel
+=PMT(6%/12,240,150000)
+```
+
+This produces the same payment amount.
+
+## Sign Convention in Excel
+
+Excel follows a cash-flow convention:
+
+* **Money received → Positive**
+* **Money paid → Negative**
+
+For example, if you receive a loan of $150,000:
+
+```excel
+PV = 150000
+```
+
+The monthly repayment is shown as negative because you are paying the money back:
+
+```excel
+PMT ≈ -1074.65
+```
+
+If you want the payment displayed as a positive number, you can use:
+
+```excel
+=-PMT(6%/12,240,150000)
+```
+
+### Key Point
+
+**Amortisation Schedule → Shows payment breakdown → Interest + Principal → Remaining Balance**
+
+**PMT → Calculates the periodic payment required to repay the loan.**
+
+<img width="721" height="794" alt="image" src="https://github.com/user-attachments/assets/b390bdce-0e0c-44a6-9937-fe85a8b6869a" />
+
+```Payment=PMT(Annual_Interst_Rate/Payment_per_Year,Years*Payment_per_Year,Amount)```
+```Principal=PPMT(Annual_Interst_Rate/Payment_per_Year,A7,Years*Payment_per_Year,Amount)```
+```Interest=IPMT(Annual_Interst_Rate/Payment_per_Year,A7,Years*Payment_per_Year,Amount)```
+```Balance= Previous balance + Principal```
