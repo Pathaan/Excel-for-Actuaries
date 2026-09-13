@@ -45,8 +45,9 @@ SUMIF: Adds values based on one criterion. ```SUMIF	=SUMIF(B2:B100,"Health",D2:D
 SUMIFS: Adds values based on multiple criteria. ```SUMIFS	=SUMIFS(D2:D100,B2:B100,"Health",C2:C100,"East")```
 
 SUMPRODUCT: Multiplies corresponding values in one or more arrays and returns the sum of those products. ```SUMPRODUCT	=SUMPRODUCT(C2:C100,D2:D100)```
-```=SUMPRODUCT(A2:A100 + B2:B100 + C2:C100) *(D2:D100="Health")```
-Easy way to remember:
+
+```=SUMPRODUCT((A2:A100 + B2:B100 + C2:C100) *(D2:D100="Health"))``` This formula calculates the total of columns A, B, and C for only those rows where column D is "Health".
+
 
 COUNT → Count numbers
 
