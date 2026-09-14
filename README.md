@@ -603,6 +603,16 @@ A loan of INR 5 crores is being given at 8% per annum for 10 years. Annual repay
 
 ---
 
+## Method 1		
+<img width="2061" height="1538" alt="image" src="https://github.com/user-attachments/assets/bcbf9b8f-860f-4682-b379-07616ce1cd27" />
+
+		
+## Method 2										
+<img width="2077" height="726" alt="image" src="https://github.com/user-attachments/assets/4cd439d6-5eea-4100-8c69-a64c0df80971" />
+
+## d,e,f						
+<img width="2137" height="1801" alt="image" src="https://github.com/user-attachments/assets/9a3b4bd7-eb3f-44d9-a4cc-fbfcf1e2366f" />
+
 # Question 2
 
 A loan of INR 90 lakhs is given at 18.50% for three years. Calculate the equal installments and the breakup of interest and principal for each payment made that the borrower will have to pay in the following modes:
@@ -611,13 +621,12 @@ A loan of INR 90 lakhs is given at 18.50% for three years. Calculate the equal i
 **b)** Quarterly
 **c)** Annually
 
+Some formulas for solve this question,
+### i(p) = p[(1+i)^(1/p)-1]
+Loan = X*(1-v^n)/i
+### X = (Loan*i)/(1-v^n)
+when pthly, Loan = pX(1-v^n)/i(p)
+### X= Loan*i(p)/ p(1-v^n)
+### Interest = Principal at start of the year*[i(p)/p]
 
-		
-<img width="2061" height="1538" alt="image" src="https://github.com/user-attachments/assets/bcbf9b8f-860f-4682-b379-07616ce1cd27" />
-
-		
-										
-<img width="2077" height="726" alt="image" src="https://github.com/user-attachments/assets/4cd439d6-5eea-4100-8c69-a64c0df80971" />
-
-							
-<img width="2137" height="1801" alt="image" src="https://github.com/user-attachments/assets/9a3b4bd7-eb3f-44d9-a4cc-fbfcf1e2366f" />
+<img width="3070" height="1480" alt="image" src="https://github.com/user-attachments/assets/00d12767-95bd-4e37-89ad-2e3c4b11636e" />
